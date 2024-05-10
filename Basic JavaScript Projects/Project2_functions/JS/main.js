@@ -10,3 +10,4 @@ function cfunction() {
     conca += " I am concatenating using the += operator"
     document.getElementById("concatenate").innerHTML= conca
 }
+
