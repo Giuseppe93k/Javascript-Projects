@@ -16,4 +16,8 @@ document.write(Sent1 + Sent2);
 // writing an expression
 document.write(20-10);
 
+function myFunction() {
+    document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+}
+
 
