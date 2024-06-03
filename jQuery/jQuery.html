@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--link to Google API jQuery files-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <Script>
+        //wait until the document is loaded before running jQuery
+        $(document).ready(function() {
+            //Selecting the HTML element to append content
+            $("html").append(
+                //adding content to the HTML element 
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //adding CSS to the HTML element with id='2' using jQuery
+            $("#2").css({"color":"red"});
+            //click function to hide h1 element when element with the id='3' is clicked 
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+        });
+
+    </Script>
+</html>
